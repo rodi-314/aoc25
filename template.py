@@ -1,10 +1,10 @@
 def part_1():
-    with open('day', 'r') as input_file:
+    with open('day_x_test.txt', 'r') as input_file:
         pass
 
 
 def part_2():
-    with open('day', 'r') as input_file:
+    with open('day_x_test.txt', 'r') as input_file:
         pass
 
 
