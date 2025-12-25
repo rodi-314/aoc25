@@ -1,0 +1,14 @@
+def main():
+    with open('day', 'r') as input_file:
+        pass
+
+
+if __name__ == '__main__':
+    main()
+def main():
+    with open('day', 'r') as input_file:
+        pass
+
+
+if __name__ == '__main__':
+    main()
