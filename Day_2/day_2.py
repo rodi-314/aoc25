@@ -22,7 +22,7 @@ def check_repetitions(num):
     return False
 
 
-def main():
+def part_1():
     with open('day_2.txt', 'r') as input_file:
         total = 0
         for rng in input_file.read().split(','):
@@ -35,6 +35,8 @@ def main():
 
         print(f'Part 1: Sum of invalid IDs = {total}')
 
+
+def part_2():
     with open('day_2.txt', 'r') as input_file:
         total = 0
         for rng in input_file.read().split(','):
@@ -45,6 +47,11 @@ def main():
                     total += num
 
         print(f'Part 2: Sum of invalid IDs = {total}')
+
+
+def main():
+    part_1()
+    part_2()
 
 
 if __name__ == '__main__':

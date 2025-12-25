@@ -3,7 +3,7 @@ DIAL_SIZE = 100
 COUNT_POSITION = 0
 
 
-def main():
+def part_1():
     with open('day_1.txt', 'r') as input_file:
         position = STARTING_POSITION
         times = 0
@@ -18,6 +18,8 @@ def main():
 
         print(f'Part 1: Number of times dial points at {COUNT_POSITION} = {times}')
 
+
+def part_2():
     with open('day_1.txt', 'r') as input_file:
         position = STARTING_POSITION
         times = 0
@@ -38,6 +40,11 @@ def main():
                 position = (position + turns) % DIAL_SIZE
 
         print(f'Part 2: Number of times dial points at {COUNT_POSITION} = {times}')
+
+
+def main():
+    part_1()
+    part_2()
 
 
 if __name__ == '__main__':

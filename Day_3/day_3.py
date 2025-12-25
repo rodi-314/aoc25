@@ -1,7 +1,7 @@
 NO_OF_BATTERIES = 12
 
 
-def main():
+def part_1():
     with open('day_3.txt', 'r') as input_file:
         total_joltage = 0
         for line in input_file:
@@ -18,6 +18,8 @@ def main():
 
         print(f'Part 1: Total output joltage = {total_joltage}')
 
+
+def part_2():
     with open('day_3.txt', 'r') as input_file:
         total_joltage = 0
         for line in input_file:
@@ -39,6 +41,11 @@ def main():
             total_joltage += int(max_joltage)
 
         print(f'Part 2: Total output joltage = {total_joltage}')
+
+
+def main():
+    part_1()
+    part_2()
 
 
 if __name__ == '__main__':
