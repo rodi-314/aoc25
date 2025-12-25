@@ -4,10 +4,10 @@ COUNT_POSITION = 0
 
 
 def main():
-    with open('day_1_test.txt', 'r') as input_file:
+    with open('day_1.txt', 'r') as input_file:
         position = STARTING_POSITION
         times = 0
-        for line in input_file.readlines():
+        for line in input_file:
             line = line.strip()
             direction, turns = line[0], int(line[1:])
             if direction == 'L':
@@ -21,7 +21,7 @@ def main():
     with open('day_1.txt', 'r') as input_file:
         position = STARTING_POSITION
         times = 0
-        for line in input_file.readlines():
+        for line in input_file:
             line = line.strip()
             direction, turns = line[0], int(line[1:])
             if direction == 'L':
